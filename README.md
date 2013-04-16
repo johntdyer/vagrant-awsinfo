@@ -1,24 +1,24 @@
-# vagrant awshost plugin
+# vagrant awsinfo plugin
 
 This plug in helps you get some metadata from an Vagrant machine provisioned with the AWS provider
 
-This is useful when you use want to find out the external IP of the instance you just provisioned
+This is useful when you use want to find out the external IP, instanceID, or username of the instance you just provisioned
 
 
 ## Installing
 
-```vagrant plugin install vagrant-awshost```
+```vagrant plugin install vagrant-awsinfo```
 
 
 ## Querying
 
-The `vagrant awshost` command is provided by this plugin.
+The `vagrant awsinfo` command is provided by this plugin.
 
 Examples:
 
 ```
-% vagrant awshost
-{"host":"ec2-1-2-3-4.compute-1.amazonaws.com","port":22,"private_key_path":"/Users/jdyer/.ssh/example.pem","username":"root"}
+% vagrant awsinfo
+{:host=>"ec2-xxx-xxx-xxx-xxxx.compute-1.amazonaws.com", :ssh_port=>22, :username=>"root", :instance_id=>"i-3188a75e", :state=>"running"}
 ```
 
 ## Contributing
