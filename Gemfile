@@ -1,0 +1,2 @@
+gem "bundler"
+gem "rake"

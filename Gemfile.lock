@@ -1,0 +1,10 @@
+GEM
+  specs:
+    rake (10.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler
+  rake
