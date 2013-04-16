@@ -19,11 +19,27 @@ module VagrantAwsInfo
             end
             settings.machines = ["default"] if settings.machines.empty?
 
-            with_target_vms(settings.machines) do |machine|
+            @env.ui.info get_info(settings.machines)
+
+        end
+
+        private
+
+        def get_info(machine)
+            with_target_vms(machine) do |machine|
                 if machine.provider_name == :aws
-                    @env.ui.info machine.provider.ssh_info.to_json
+                    ssh_info = machine.provider.ssh_info
+                    r = {
+                        host: ssh_info[:host],
+                        ssh_port: ssh_info[:port],
+                        username: ssh_info[:username],
+                        instance_id: machine.id,
+                        state: machine.provider.state.short_description,
+                    }
+                     return r
+
                 else
-                    @env.ui.error "Sorry this plugin currently only supports the AWS provider"
+                    return "Sorry this plugin currently only supports the AWS provider"
                 end
             end
         end
