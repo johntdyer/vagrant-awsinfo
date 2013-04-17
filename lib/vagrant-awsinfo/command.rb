@@ -36,7 +36,7 @@ module VagrantAwsInfo
                         instance_id: machine.id,
                         state: machine.provider.state.short_description,
                     }
-                     return r
+                     return r.to_json
 
                 else
                     return "Sorry this plugin currently only supports the AWS provider"
