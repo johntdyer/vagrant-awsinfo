@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["johntdyer@gmail.com"]
   spec.description   = 'vagrant aws info querying plugin'
   spec.summary       = spec.description
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/johntdyer/vagrant-awsinfo"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
