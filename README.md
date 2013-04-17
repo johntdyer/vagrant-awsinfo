@@ -19,6 +19,12 @@ Examples:
 ```
 % vagrant awsinfo
 {:host=>"ec2-xxx-xxx-xxx-xxxx.compute-1.amazonaws.com", :ssh_port=>22, :username=>"root", :instance_id=>"i-3188a75e", :state=>"running"}
+
+% vagrant awsinfo -k host
+ec2-174-129-128-49.compute-1.amazonaws.com
+
+% vagrant awsinfo -k host -m default
+ec2-174-129-128-49.compute-1.amazonaws.com
 ```
 
 ## Contributing
