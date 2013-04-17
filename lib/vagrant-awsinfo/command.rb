@@ -6,8 +6,6 @@ module VagrantAwsInfo
 
         def execute
 
-            require "optparse"
-
             settings = Settings.new
             settings.machines = []
 
@@ -37,7 +35,6 @@ module VagrantAwsInfo
                         state: machine.provider.state.short_description,
                     }
                      return r.to_json
-
                 else
                     return "Sorry this plugin currently only supports the AWS provider"
                 end

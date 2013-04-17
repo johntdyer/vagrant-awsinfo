@@ -3,4 +3,6 @@
 #
 # So this gem is called 'vagrant-awsport' and thus vagrant tries
 # to require "vagrant-awsport"
+require "optparse"
+require "json"
 require "vagrant-awsinfo/plugin"
