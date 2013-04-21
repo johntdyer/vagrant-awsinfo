@@ -25,6 +25,29 @@ ec2-174-129-128-49.compute-1.amazonaws.com
 
 % vagrant awsinfo -k host -m default
 ec2-174-129-128-49.compute-1.amazonaws.com
+
+% vagrant awsinfo -k host -m default -p
+{
+  "availability_zone": "us-east-1c",
+  "created_at": "2013-04-20T20:51:10Z",
+  "flavor": "m1.medium",
+  "host": "ec2-50-16-48-88.compute-1.amazonaws.com",
+  "public_ip": "50.16.48.88",
+  "private_ip": "10.151.111.73",
+  "private_dns_name": "ip-10-151-111-73.ec2.internal",
+  "tags": {
+    "Name": "Vagrant-PhonoGateway",
+    "OwnerHostname": "dyer.local",
+    "CreatedAt": "2013-04-20T 4:46:37",
+    "OwnerUsername": "jdyer"
+  },
+  "groups": [
+    "everything_open"
+  ],
+  "ssh_port": 22,
+  "instance_id": "i-28f14e43",
+  "state": "running"
+}
 ```
 
 ## Contributing
