@@ -26,7 +26,8 @@ ec2-174-129-128-49.compute-1.amazonaws.com
 % vagrant awsinfo -k host -m default
 ec2-174-129-128-49.compute-1.amazonaws.com
 
-% vagrant awsinfo -k host -m default -p
+## Pretty Print
+% vagrant awsinfo -m default -p
 {
   "availability_zone": "us-east-1c",
   "created_at": "2013-04-20T20:51:10Z",
