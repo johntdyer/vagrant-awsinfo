@@ -20,3 +20,6 @@
 
 # 0.0.6
 * Optparse was being run to late in execute step. 
+
+# 0.0.7
+* Incorrect log level
