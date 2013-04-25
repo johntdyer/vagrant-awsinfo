@@ -17,3 +17,6 @@
 
 * Much more meta data from running instance
 * Pretty print mode
+
+# 0.0.6
+* Optparse was being run to late in execute step. 
