@@ -28,7 +28,7 @@ module VagrantAwsInfo
 
             settings.machines = ["default"] if settings.machines.empty?
 
-            @env.ui.debug "[vagrant-awsinfo] - Getting info for machine " + settings.machines.inspect
+            #@env.ui.debug "[vagrant-awsinfo] - Getting info for machine " + settings.machines.inspect
 
             instance_info = Hash[ get_info(settings.machines).map{ |k,v| [k.to_s,v] } ]
 

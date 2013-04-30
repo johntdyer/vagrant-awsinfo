@@ -23,3 +23,6 @@
 
 # 0.0.7
 * Incorrect log level
+
+# 0.0.8
+* Might help if I actually fixed the log level instead of just saying I did
